@@ -1,0 +1,33 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'FGGLQF,LATGQN'}
+      name: image_1
+      properties: {display_mode: original_size, source: _/theme/TileEditorSpritesheet.2x_2.png}
+      type: Image
+    layout_properties: {width: 217}
+    name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'XCPKXP,UYONAW'}
+      name: canvas_1
+      properties: {background: '#f4f8f9', height: '600'}
+      type: Canvas
+    layout_properties: {expand: true, width: 324}
+    name: card_2
+    properties: {role: card}
+    type: ColumnPanel
+  layout_properties: {full_width_row: false, grid_position: 'WAHVZH,GBOELM'}
+  name: flow_panel_1
+  properties: {align: left}
+  type: FlowPanel
+container:
+  properties:
+    spacing:
+      margin: ['0', null, '0', null]
+    spacing_above: none
+    spacing_below: none
+    wrap_on: never
+  type: ColumnPanel
+is_package: true

@@ -12,40 +12,45 @@ components:
     type: Canvas
   layout_properties: {grid_position: 'WYQXTS,SFNGQP'}
   name: flow_panel_1
-  properties: {align: left, spacing_above: none, spacing_below: none}
+  properties: {align: center, role: null, spacing_above: none, spacing_below: none}
   type: FlowPanel
-- layout_properties: {grid_position: 'CSVWAQ,VGUUGA'}
-  name: label_1
-  properties: {align: left}
-  type: Label
-- layout_properties: {grid_position: 'CSVWAQ,NXGTBA'}
-  name: label_2
-  properties: {align: left}
-  type: Label
-- event_bindings: {click: primary_color_2_click}
-  layout_properties: {grid_position: 'GHRDYP,VPNLDS'}
-  name: primary_color_2
-  properties: {role: primary-color, text: clear}
-  type: Button
-- event_bindings: {click: primary_color_1_click}
-  layout_properties: {grid_position: 'GHRDYP,AMGAEF PZTYNF,RPSOQM'}
-  name: primary_color_1
-  properties: {role: primary-color, text: save}
-  type: Button
-- layout_properties: {grid_position: 'GHRDYP,AMGAEF MXVHLG,FQNVRV'}
-  name: label_3
-  properties: {height: 58}
-  type: TextArea
-- event_bindings: {click: primary_color_2_copy_click}
-  layout_properties: {grid_position: 'GHRDYP,BIXERQ DUOKKS,BVCVJM'}
-  name: primary_color_2_copy
-  properties: {role: primary-color, text: load}
-  type: Button
-- layout_properties: {grid_position: 'GHRDYP,BIXERQ IPNXWA,XANZYO'}
-  name: text_area_1
-  properties: {height: 58}
-  type: TextArea
+- components:
+  - layout_properties: {grid_position: 'SWKKIW,XBSRFY LBXDRA,DKSFNR'}
+    name: label_1
+    properties: {align: left, visible: false}
+    type: Label
+  - event_bindings: {click: primary_color_2_click}
+    layout_properties: {grid_position: 'SWKKIW,XBSRFY BKCOYS,VSNCYF'}
+    name: primary_color_2
+    properties: {align: full, role: primary-color, text: clear}
+    type: Button
+  - layout_properties: {grid_position: 'SWKKIW,EHKJPL UCFPXC,PIEMUG'}
+    name: label_2
+    properties: {align: left, visible: false}
+    type: Label
+  - event_bindings: {click: primary_color_1_click}
+    layout_properties: {grid_position: 'SWKKIW,EHKJPL GINBXW,AWOPXV BQDTVT,WGKBDZ'}
+    name: primary_color_1
+    properties: {align: full, role: primary-color, text: save}
+    type: Button
+  - layout_properties: {grid_position: 'SWKKIW,EHKJPL GINBXW,AWOPXV QBPUXF,OVYGLX'}
+    name: label_3
+    properties: {height: 58}
+    type: TextArea
+  - event_bindings: {click: primary_color_2_copy_click}
+    layout_properties: {grid_position: 'SWKKIW,EHKJPL GINBXW,EAMVSS HMSXNN,ZVZYZA'}
+    name: primary_color_2_copy
+    properties: {align: full, role: primary-color, text: load}
+    type: Button
+  - layout_properties: {grid_position: 'SWKKIW,EHKJPL GINBXW,EAMVSS VDURNX,TZUPID'}
+    name: text_area_1
+    properties: {height: 58}
+    type: TextArea
+  layout_properties: {grid_position: 'VYKGYP,VERRRW'}
+  name: column_panel_1
+  properties: {col_widths: '{"XBSRFY":13,"EHKJPL":47}'}
+  type: ColumnPanel
 container:
-  properties: {col_widths: '{"VGUUGA":15,"NXGTBA":45}', spacing_above: none, spacing_below: none, wrap_on: never}
+  properties: {col_widths: '{}', spacing_above: none, spacing_below: none, wrap_on: never}
   type: ColumnPanel
 is_package: true

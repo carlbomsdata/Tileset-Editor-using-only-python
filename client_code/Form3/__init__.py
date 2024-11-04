@@ -89,6 +89,9 @@ class Form3(Form3Template):
         self.draw_positions = {}
 
     def primary_color_2_copy_click(self, **event_args):
+        if self.text_area_1.text == "":
+            return
+            
         self.draw_positions = json.loads(self.text_area_1.text)
         # Convert string keys back to tuple keys
         self.draw_positions = {tuple(map(float, k.split(','))): v for k, v in self.draw_positions.items()}
